@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %}
+    商品列表页
+{% endblock %}
+
+{% block lable %}
+    在售商品
+{% endblock %}
+
+{% block content %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>商品编号</th>
+                <th>商品名称</th>
+                <th>商品价格</th>
+                <th>商品数量</th>
+                <th>商品产地</th>
+                <th>商品保质期</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+                <td>00001</td>
+                <td>云南龙井</td>
+                <td>$28.88</td>
+                <td>998</td>
+                <td>月之灵海</td>
+                <td>三年之后又三年</td>
+                <td>
+                    <button class="btn btn-primary" type="button">下架</button>
+                    <button class="btn btn-warning" type="button">修改</button>
+                </td>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+{% endblock %}
